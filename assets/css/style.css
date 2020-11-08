@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+html,body{
+overflow-x: hidden !important;
+}
+a{
+color:#222222 !important;
+}
+.display-4{
+font-size: 2.5rem !important;
+}
+a.btn-outline-dark{
+width: 200px;
+height: 40px;
+}
+a.btn-outline-dark:hover{
+color: #fff !important;
+}
+.card, .card-footer{
+background-color: white !important;
+border: none !important;
+}
+.image-container img , .video-background video, .art-gallery img{
+width: 100%;
+height: 100%;
+}
+.logo a{
+font-family: 'Lobster', cursive;
+font-size : 3rem;
+}
+.navbar{
+margin: 1rem 3rem;
+}
+.navbar li a {
+margin: 0 20px 0px 0px;
+font-size: 18px;
+}
+.navbar li a:hover{
+transition:  all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+background-color: #EAEAEA;
+}
+/*****************************************INTRO WRAPPER ***************************************************/
+.intro-wrapper{
+margin: 1rem 0rem;
+}
+.intro-wrapper .carousel-item {
+height: 80vh;
+min-height: 350px;
+background: no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.intro-wrapper .carousel-fade .carousel-item {
+opacity: 0;
+transition: opacity ease-out ;
+}
+.intro-wrapper .carousel-fade .carousel-item.active,.carousel-fade .carousel-item-next.carousel-item-left,.carousel-fade .carousel-item-prev.carousel-item-right {
+opacity: 1;
+}
+.intro-wrapper .carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-right {
+opacity: 0;
+}
+.intro-wrapper .carousel-fade .carousel-item-next,.carousel-fade .carousel-item-prev,.carousel-fade .carousel-item.active,.carousel-fade .active.carousel-item-left,.carousel-fade .active.carousel-item-prev {
+transform: translateX(0);
+transform: translate3d(0, 0, 0);
+}
+ .intro-content{
+padding : 30px 100px;
+font-family: 'Merriweather', serif;
+}
+/*****************************************ORIGINAL ART ***************************************************/
+.two-images{
+  display: flex;
+  justify-content: space-between;
+  }
+  .two-images div{
+    flex-basis: 50%;
+  }
+.background{
+height: 400px;
+background: no-repeat center scroll;
+object-fit: contain;
+-webkit-background-size: contain;
+-moz-background-size: contain;
+-o-background-size: contain;
+background-size: contain; 
+
+}
+
+
+/*****************************************COMMISSIONED ART ***************************************************/
+.commissioned-art-wrapper .carousel-fade .carousel-item {
+height: 100vh;
+  opacity: 0;
+  transition-duration: .6s;
+  transition-property: opacity;
+ }
+ 
+ .commissioned-art-wrapper .carousel-fade  .carousel-item.active,
+ .carousel-fade  .carousel-item-next.carousel-item-left,
+ .carousel-fade  .carousel-item-prev.carousel-item-right {
+   opacity: 1;
+ }
+ 
+ .commissioned-art-wrapper .carousel-fade .active.carousel-item-left,
+ .carousel-fade  .active.carousel-item-right {
+  opacity: 0;
+ }
+ 
+ .commissioned-art-wrapper .carousel-fade  .carousel-item-next,
+ .carousel-fade .carousel-item-prev,
+ .carousel-fade .carousel-item.active,
+ .carousel-fade .active.carousel-item-left,
+ .carousel-fade  .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+ }
+
+.orderButton{
+margin:20px 0px 50px;
+width: 200px;
+}
+/*****************************************BLOG SECTION ***************************************************/
+
+/*****************************************GALLERY ***************************************************/
+.art-gallery  {
+vertical-align: middle;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+}
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+/*****************************************FOOTER***************************************************/
+footer .menus{
+justify-content: space-around;
+margin:  5rem;
+}
+footer .menus li a{
+font-family: 'Baloo Tamma 2', cursive;
+font-size: 18px;
+color: #fff !important;
+}
+#mapArea{
+margin: 30px 30px;
+}
+#mapArea .map{
+width: 100%;
+overflow-y: hidden !important;
+}
+.about-container p{
+padding: 0px 40px;
+font-size: 16px;
+font-family: 'Poppins', sans-serif;
+}
+.about-container .about-img img{
+height: 100%;
+width: 100%;
+padding: 0px 40px;
+}
+/***********Previous Show page****************************/
+/*@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700";*/
+.mt100 {
+margin-top: 100px;
+}
+.image-holder{
+height: 200px;
+}
+/*Body of the Panel when it expands*/
+.panel .panel-body {
+position: relative;
+padding: 0 !important;
+overflow: hidden;
+height: auto;
+}
+/*Image size and transition*/
+.panel .panel-body a img {
+display: block;
+margin: 0;
+width: 100%;
+height: 150px;
+transition: all 0.5s;
+-moz-transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-o-transition: all 0.5s;
+}
+/*Transform scale effect when you hover over*/
+.panel .panel-body a.zoom:hover img {
+transform: scale(1.3);
+-ms-transform: scale(1.3);
+-webkit-transform: scale(1.3);
+-o-transform: scale(1.3);
+-moz-transform: scale(1.3);
+}
+/*Zoom Button*/
+.panel .panel-body a.zoom span.overlay {
+position: absolute;
+top: 0;
+left: 0;
+visibility: hidden;
+height: 100%;
+width: 100%;
+background-color: #000;
+opacity: 0;
+transition: opacity .25s ease-out;
+-moz-transition: opacity .25s ease-out;
+-webkit-transition: opacity .25s ease-out;
+-o-transition: opacity .25s ease-out;
+}
+/*Zoom Button and Tint Overlay*/
+.panel .panel-body a.zoom:hover span.overlay {
+display: block;
+visibility: visible;
+opacity: 0.55;
+-moz-opacity: 0.55;
+-webkit-opacity: 0.55;
+filter: alpha(opacity=65);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+}
+/*Zoom Button*/
+.panel .panel-body a.zoom:hover span.overlay i {
+position: absolute;
+top: 45%;
+left: 0%;
+width: 100%;
+font-size: 2.25em;
+color: #fff !important;
+text-align: center;
+opacity: 1;
+-moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=1);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+}
+#lightbox .modal-content {
+display: inline-block;
+text-align: center;
+}
+#lightbox .modal-content img{
+height: 100%;
+width: 100%;
+}
+#thumbnail .modal-content {
+display: inline-block;
+text-align: center;
+}
+#thumbnail .modal-content img{
+height: 100%;
+width: 100%;
+}
+/***********Latest Art Event Page****************************/
+.art-event-wrapper h2{
+font-family: 'Poppins', sans-serif;
+margin-top: 30px;
+}
+.invitation{
+background: url('../images/event-main.JPG') center center no-repeat;
+background-size: cover;
+height: 130vh;
+
+}
+.thumbnail-image{
+display: flex;
+justify-content: space-evenly;
+padding: 50px 0px;
+}
+.thumbnail-image img{
+height: 200px;
+width: 300px;
+cursor: pointer;
+}
+/***********Latest Art Event Page****************************/
+.original-art-wrapper{
+  padding-bottom: 100px;
+}
+.original-art-wrapper .grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 100px 50px;
+  padding-bottom: 50px;
+}
+.original-art-wrapper .grid-container .grid-item{
+  height: 350px;
+  width: 380px;
+  margin: 30px 0px;
+}
+.original-art-wrapper .grid-container img{
+ height: 100%;
+ width: 100%;
+ margin: 30px 0px;
+}
+.original-art-wrapper .grid-container {
+  font-size: 20px;
+}
+/***********Art Interview Page****************************/
+.interview-main-image {
+background: url('https://images.pexels.com/photos/4342124/pexels-photo-4342124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') top center no-repeat;
+height: 80vh;
+margin:3rem 0rem;
+}
+/***********Clay Figure Page****************************/
+.clay-figure-content h3{
+margin-bottom: 30px;
+}
+.clay-figure-content p{
+font-size: 16px;
+margin-bottom: 30px;
+margin: 30px 40px;
+font-family: 'Poppins', sans-serif;
+}
+.blog-wrapper p{
+font-size: 16px;
+font-family: 'Poppins', sans-serif;
+}
+/*****************************************RESPONSIVE ***************************************************/
+@media  screen and (max-width:768px){
+h2{
+font-size: 20px !important;
+}
+.display-4{
+font-size: 1.5rem !important;
+}
+.logo a{
+font-size : 2rem;   
+}
+.navbar{
+margin: 0rem 0rem; 
+}
+.navbar li a { 
+margin: 0 0px 0px 0px;
+font-size: 14px;
+}
+.right-links{
+display: none;
+}
+.intro-wrapper{
+margin: 1rem 1rem;
+}
+.carousel-item {
+height: 50vh;
+}
+.intro-content{
+padding : 2rem 0rem;
+text-align: center;
+}
+.background{
+background-size: cover;
+}
+
+
+.original-art {
+margin: 2rem 0rem;
+}
+.background{
+height: 175px;
+padding: 0px 40px;
+}
+.blog-section {
+margin: 0rem 2rem;
+}
+.interview-section{
+margin: 0rem 0rem;
+}
+footer{
+height: 300px;
+margin: 0 0 2rem;
+}
+footer .menus{
+flex-wrap: wrap;
+margin:  1rem 20px;
+list-style-type: none;
+}
+footer .menus li a{
+font-size: 15px;
+}
+.about-container p {
+padding: 0px 20px;
+}
+.art-event-wrapper h2{
+font-size: 20px ;
+}
+.invitation{
+height: 30vh;
+background-size: contain;
+}
+.thumbnail-image{
+flex-direction: column;
+padding: 25px 0px;
+align-items: center;
+justify-content: space-between;
+}
+.thumbnail-image img{
+height: 200px;
+width: 200px;
+margin: 20px 0px;
+}
+.interview-heading{
+font-size: 16px;
+}
+.interview-main-image {
+height: 50vh;
+margin: 2rem;
+}
+iframe{
+width: 380px;
+height: 300px;
+}
+.clay-figure-content p{
+font-size: 14px;
+margin: 30px 20px;
+}
+.blog-wrapper p{
+font-size: 14px;
+}
+.original-art-wrapper{
+  padding-bottom: 50px;
+}
+.original-art-wrapper .grid-container{
+justify-content: center;
+  grid-template-columns: auto auto ;
+  grid-gap: 50px 25px;
+  padding-bottom: 25px;
+}
+.original-art-wrapper .grid-container .grid-item{
+  height: 150px;
+  width: 150px;
+  margin: 15px 0px;
+}
+.original-art-wrapper .grid-container img{
+
+ margin: 15px 0px;
+}
+.original-art-wrapper .grid-container {
+  font-size: 15px;
+}
+.commissioned-art-wrapper .carousel-fade .carousel-item {
+  height: auto;
+}
+}
