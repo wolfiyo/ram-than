@@ -18,6 +18,23 @@
          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
          />
       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
    </head>
    <body>
       <!--Page wrapper-->
@@ -78,15 +95,19 @@
          <h2 class="text-center pb-3 interview-heading px-2">INTERVIEW FOR THE HINDU dated on dd/mm/yyyy</h2>
          <div class="interview-main-image" style="background-image: url(assets/images/interview-hindu.JPG);">  
          </div>
+   <hr>
          <h2 class="text-center pb-3 interview-heading px-2">INTERVIEW FOR Adyar Times dated on dd/mm/yyyy</h2>
          <div class="interview-main-image" style="background-image: url(assets/images/interview-adyar.JPG);">  
          </div>
+   <hr>
          <h2 class="text-center pb-3 interview-heading px-2">INTERVIEW FOR THE Raj Web News dated on dd/mm/yyyy</h2>
          <div class="interview-main-image">  
          </div>
+   <hr>
          <h2 class="text-center pb-3 interview-heading px-2">INTERVIEW FOR Desi Drame baaz dated on dd/mm/yyyy</h2>
          <div class="interview-main-image" style="background-image: url(https://images.pexels.com/photos/3278768/pexels-photo-3278768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">  
          </div>
+   <hr>
          <!-----Footer-->
          <footer class="pt-5 bg-dark text-white">
             <div class="logo text-center ">
